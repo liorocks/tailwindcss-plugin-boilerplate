@@ -1,0 +1,25 @@
+{
+  "name": "tailwindcss-plugin-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TailwindCSS Plugin Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "tailwindcss",
+    "plugin",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Lado Lomidze <lado.lomidze@gmail.com> (https://landish.dev/)",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-matcher-css": "^1.1.0",
+    "lodash": "^4.17.20",
+    "postcss": "^8.1.9",
+    "tailwindcss": "^2.0.1"
+  }
+}
