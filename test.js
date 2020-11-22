@@ -73,7 +73,7 @@ test('variants can be customized', () => {
   }).then(css => {
     expect(css).toMatchCss(`
     .example-utility-class {
-      display: none
+      display: block
     } 
     .hover\\:example-utility-class:hover {
       display: block
