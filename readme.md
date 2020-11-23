@@ -1,5 +1,5 @@
 <p align="center">  
-  <img width="120" src="./tailwindcss-logo.svg" alt="Tailwind CSS logo">
+  <img width="120" src="https://raw.githubusercontent.com/Landish/tailwindcss-plugin-boilerplate/main/tailwindcss-logo.svg" alt="Tailwind CSS logo">
 </p>
 
 <h1 align="center">Tailwind CSS Plugin Boilerplate</h1>
