@@ -12,6 +12,7 @@
 
 - Tests with [Jest](https://jestjs.io/) (v26)
 - [Github Actions](https://github.com/features/actions) (CI)
+- Automatically Publish to [NPM](https://www.npmjs.com/)
 
 ## Usage
 
@@ -97,7 +98,25 @@ $ git remote -v
 
 8. **Publish to NPM**
 
-If you want your plugin to be used by other people, you can publish it [npm](https://www.npmjs.com/).
+Tailwind CSS Plugin Boilerplate comes with a Github Action which automatically publishes your plugin to [npm](https://www.npmjs.com/), when a new **Release** is created on your plugin's Github repository.
+
+To setup automatic releases on npm follow the insturctions below:
+
+- Login to [npm](https://www.npmjs.com/) with your credentials.
+- Under **Access Tokens** page click **Generate New Token** button.
+- On **New Access Token** page select an option **Automation** and click **Generate Token** button.
+- Copy that Token and go to **Settings** tab in your **Github Repository**.
+- In **Secrets** page click **New repository secret** button.
+- In **Name** field write `NPM_TOKEN`, in **Value** field paste that copied Token from npm and click **Add Secret** button.
+- Remove `private` key from `package.json`
+- Update `version` key in `package.json`
+- Create new **Release** in your Github repository
+
+It will run `npm test` before publishing and after couple of minutes your plugin will be available on [npm](https://www.npmjs.com/).
+
+If you don't want to publish your plugin to npm, simply remove this file and keep `private` key to `true` in your `package.json` file. You can always remove (unpublish) your published package from npm with `npm unpublish your-package-name -f` command.
+
+For more details take a look at the [.github/workflows/npm-publish.yml](https://github.com/Landish/tailwindcss-plugin-boilerplate/blob/main/.github/workflows/npm-publish.yml).
 
 9. **Update Readme**
 
