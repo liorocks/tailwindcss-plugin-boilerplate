@@ -5,7 +5,7 @@
 <h1 align="center">Tailwind CSS Plugin Boilerplate</h1>
 
 <p align="center">
-  Create <a href="https://tailwindcss.com">Tailwind CSS</a> plugin with ease.
+  Create <a href="https://tailwindcss.com">Tailwind CSS</a> plugin and publish it to <a href="https://www.npmjs.com/">npm</a> with ease.
 </p>
 
 ## Features
