@@ -1,6 +1,12 @@
-# Tailwind CSS Plugin Boilerplate
+<p align="center">  
+  <img width="100" src="./tailwindcss-logo.svg" alt="Tailwind CSS logo">
+</p>
 
-> Create Tailwind CSS plugin with ease.
+<h2 align="center">Tailwind CSS Plugin Boilerplate</h2>
+
+<p align="center">
+  Create <a href="https://tailwindcss.com">Tailwind CSS</a> plugin with ease.
+</p>
 
 ## Features
 
