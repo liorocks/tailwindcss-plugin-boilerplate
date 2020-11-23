@@ -5,7 +5,8 @@
   "description": "TailwindCSS Plugin Boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "tailwindcss",
