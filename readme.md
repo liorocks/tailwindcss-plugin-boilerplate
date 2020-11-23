@@ -135,4 +135,4 @@ module.exports = {
 
 ## License
 
-Tailwind CSS Plugin Boilerplate is licensed under [MIT](https://github.com/Landish/tailwindcss-plugin-boilerplate/blob/main/LICENSE).
+Tailwind CSS Plugin Boilerplate is licensed under [MIT license](https://github.com/Landish/tailwindcss-plugin-boilerplate/blob/main/LICENSE).
