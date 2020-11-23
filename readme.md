@@ -1,8 +1,8 @@
 <p align="center">  
-  <img width="100" src="./tailwindcss-logo.svg" alt="Tailwind CSS logo">
+  <img width="120" src="./tailwindcss-logo.svg" alt="Tailwind CSS logo">
 </p>
 
-<h2 align="center">Tailwind CSS Plugin Boilerplate</h2>
+<h1 align="center">Tailwind CSS Plugin Boilerplate</h1>
 
 <p align="center">
   Create <a href="https://tailwindcss.com">Tailwind CSS</a> plugin with ease.
@@ -43,16 +43,22 @@ By default this boilerplate uses MIT license. You can change this in `package.js
 5. **Update Source Code**
 
 - Replace `YOUR_PLUGIN_NAME` with your plugin name in `index.js` and `test.js`
-- If your plugins depends on user configurations, you will find `CUSTOM_OPTION` key under `YOUR_PLUGIN_NAME` config object. Make sure to update this object, source code and tests to match your plugin needs.
+- Customize your plugin options under `YOUR_PLUGIN_NAME` key in `theme` object.
+- Customize your plugin variants under `YOUR_PLUGIN_NAME` key in `variants` object.
 
 ```js
 theme: {
-  // ...
-  YOUR_PLUGIN_NAME: {
-    CUSTOM_OPTION: false,
-  },
-  // ...
+    // ...
+    YOUR_PLUGIN_NAME: {
+      CUSTOM_OPTION: false,
+    },
+    // ...
 },
+variants: {
+	// ...
+    YOUR_PLUGIN_NAME: ['responsive'],
+    // ...
+}
 ```
 
 > Learn more on writing Tailwind CSS plugins in [docs](https://tailwindcss.com/docs/plugins).
@@ -92,6 +98,40 @@ $ git remote -v
 8. **Publish to NPM**
 
 If you want your plugin to be used by other people, you can publish it [npm](https://www.npmjs.com/).
+
+9. **Update Readme**
+
+Once you publish your plugin to npm, make you sure you update `README.md` with the configuration options and example codes, similar to this:
+
+Install the plugin from npm:
+
+```
+$ npm install your-tailwindcss-plugin-name
+```
+
+Then add the plugin to your `tailwind.config.js` file:
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+    YOUR_PLUGIN_NAME: {
+      // ...
+    },
+  },
+  variants: {
+    // ...
+    YOUR_PLUGIN_NAME: ['responsive'],
+    // ...
+  },
+  plugins: [
+    // ...
+    require('your-tailwindcss-plugin-name'),
+    // ...
+  ],
+};
+```
 
 ## License
 
