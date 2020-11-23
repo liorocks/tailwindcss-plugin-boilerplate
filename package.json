@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-plugin-boilerplate",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "description": "TailwindCSS Plugin Boilerplate",
   "main": "index.js",
   "scripts": {
