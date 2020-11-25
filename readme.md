@@ -11,8 +11,9 @@
 ## Features
 
 - Tests with [Jest](https://jestjs.io/) (v26)
-- [Github Actions](https://github.com/features/actions) (CI)
-- Automatically Publish to [NPM](https://www.npmjs.com/)
+- Format code with [Prettier](https://prettier.io/)
+- Run Tests with [Github Actions](https://github.com/features/actions)
+- Publish to [NPM](https://www.npmjs.com/) with [Github Actions](https://github.com/features/actions)
 
 ## Usage
 
