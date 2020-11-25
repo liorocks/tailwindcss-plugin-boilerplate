@@ -5,13 +5,15 @@
   "description": "TailwindCSS Plugin Boilerplate",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write --loglevel=error .",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format"
+      "pre-commit": "npm run lint:fix && npm run format"
     }
   },
   "keywords": [
@@ -23,6 +25,12 @@
   "author": "Lado Lomidze <lado.lomidze@gmail.com> (https://landish.dev/)",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.3.0",
     "jest": "^26.6.3",
     "jest-matcher-css": "^1.1.0",
