@@ -11,7 +11,9 @@
 ## Features
 
 - Tests with [Jest](https://jestjs.io/) (v26)
+- [ESLint](https://eslint.org/) config with [`airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) and [`prettier`](https://github.com/prettier/eslint-config-prettier)
 - Format code with [Prettier](https://prettier.io/)
+- Pre-commit hooks with [husky](https://github.com/typicode/husky)
 - Run Tests with [Github Actions](https://github.com/features/actions)
 - Publish to [NPM](https://www.npmjs.com/) with [Github Actions](https://github.com/features/actions)
 
